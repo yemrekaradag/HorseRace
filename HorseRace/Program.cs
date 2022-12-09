@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-CultureInfo cultureInfo = new CultureInfo("en-US");
+﻿//CultureInfo cultureInfo = new CultureInfo("en-US");
 Console.Write("The horse count: ");
 int horseCount = int.Parse(Console.ReadLine());
 double[] horses = new double[horseCount];
@@ -51,6 +49,7 @@ do
 } while (race);
 
 TimeSpan finishRace = DateTime.Now.Subtract(startRace);
+//startRace.ToString("HH:mm", cultureInfo);
 double theBiggest = 0;
 int winner = 0;
 
